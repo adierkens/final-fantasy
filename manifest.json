@@ -9,14 +9,13 @@
   "content_scripts": [
     {
       "matches": ["http://games.espn.go.com/*", "https://games.espn.go.com/*"],
-      "js": ["src/main.js"]
+      "js": ["build/main.js"]
     }
   ],
   "web_accessible_resources": [
-    "src/*"
+    "build/*"
   ],
   "permissions": [
     "activeTab"
   ]
 }
-

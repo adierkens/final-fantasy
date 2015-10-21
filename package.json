@@ -1,0 +1,27 @@
+{
+  "name": "final-fantasy",
+  "version": "1.0.0",
+  "description": "Better styling for ESPN's fantasy football",
+  "main": "build/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adierkens/final-fantasy.git"
+  },
+  "author": "Adam Dierkens <adam@dierkens.com> (adamdierkens.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adierkens/final-fantasy/issues"
+  },
+  "homepage": "https://github.com/adierkens/final-fantasy#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

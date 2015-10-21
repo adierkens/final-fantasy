@@ -1,8 +1,20 @@
-console.log("Main");
-var loc = chrome.extension.getURL("/src/scripts/loader.js");
-console.log(loc);
+'use strict';
 
-var src = document.createElement('script');
-src.src = loc
+var scriptLocations = [
+    chrome.extension.getURL("/src/scripts/library/handlebars-latest.js"),
+    chrome.extension.getURL("/src/scripts/loader.js"),
+]
 
-document.head.appendChild(src);
+for (i in scriptLocations) {
+    var loc = scriptLocations[i];
+    var src = document.createElement('script');
+    src.src = loc;
+    document.head.appendChild(src);
+}
+
+
+var templates = [
+    "match",
+    "team",
+    "sidebar"
+]
